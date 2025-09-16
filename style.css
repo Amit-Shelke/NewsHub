@@ -1,0 +1,69 @@
+/* Using a custom font with Tailwind CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f2f5; /* Fallback */
+    background: linear-gradient(to bottom, #f0f2f5, #e5e7eb); /* Softer gradient background */
+}
+
+/* Refined styling for the news card */
+.news-card {
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Loading Spinner Animation */
+.loader {
+    border: 5px solid #e2e8f0; /* light-gray */
+    border-top: 5px solid #2563eb; /* blue-600 */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Gradient background for the header */
+.header-gradient {
+    background: linear-gradient(90deg, #4a5568, #1a202c);
+}
+
+/* To prevent image layout shifts */
+.news-image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Modal Styling */
+#article-modal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+#modal-content {
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Back to top button transition */
+#back-to-top {
+    transform: translateY(100px);
+    opacity: 0;
+}
