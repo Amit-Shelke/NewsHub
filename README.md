@@ -1,6 +1,6 @@
 # 📰 NewsHub - A Modern News Aggregator
 
-### Live Demo: [https://github.com/Amit-Shelke/NewsHub]
+### Live Demo: [https://news-hub-wine.vercel.app/]
 
 NewsHub is a sleek, modern, single-page web application that serves as a central hub for the latest news around the world.  
 Built with **vanilla JavaScript**, it leverages **The Guardian API** for real-time news content and **Supabase** for user authentication and data persistence.  
